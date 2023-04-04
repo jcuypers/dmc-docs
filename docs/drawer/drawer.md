@@ -12,9 +12,12 @@ This is a basic example of dmc.Drawer. Set the `opened` property to open the dra
 following ways:
 
 * programmatically (using callbacks)
-* by clicking on the cross button (if not disabled using `hideCloseButton` prop)
+* by clicking on the cross button (if not disabled using `withCloseButton` prop)
 * by clicking outside the drawer area (if not disabled using `closeOnClickOutside` prop)
 * by pressing the ESC key (if not disabled using `closeOnEscape` prop)
+
+It can also be made scrollable by wrapping its content (the children property) in a dmc.ScrollArea():
+`dmc.Drawer(..., children=dmc.ScrollArea(...)`
 
 .. exec::docs.drawer.simple
 
